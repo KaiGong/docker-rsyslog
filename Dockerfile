@@ -2,7 +2,7 @@ FROM centos:centos7
 MAINTAINER quiver
 RUN yum clean all
 RUN yum -y update
-ADD http://rpms.adiscon.com/v8-stable/rsyslog.repo /etc/yum.repos.d/rsyslog.repo
+ADD http://rpms.adiscon.com/v7-stable/rsyslog.repo /etc/yum.repos.d/rsyslog.repo
 RUN yum -y update
 RUN yum -y install rsyslog
 
